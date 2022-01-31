@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list-unstyled{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu{
+            background-color: lightgray;
+        }
+
+        header  h1{
+        text-align : right;
+        background-color: red;
+        margin : 0%;
+        padding : 30px;
+                 
+    }
+
+        .main-menu > li {
+            display: inline-block;
+        }
+
+       .main-menu > li > a {
+            display: inline-block;
+            padding: 0.5em;
+            text-decoration: none;
+            color: white;
+        }
+
+       .main-menu> li > a:hover{
+            background-color: black;
+        }
+
+        .item-with-sub-menu{
+            position: relative;
+        }
+
+        .sub-menu{
+            display: none;
+            position: absolute;
+            top: 35px;
+            white-space: nowrap;
+            left: 0px;
+            padding: 1em;
+            background-color: lightgray;
+
+        }
+
+        .item-with-sub-menu:hover .sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+ <body>
+    <header>
+        <h1 > Demo of Dropdown</h1>
+    </header>
+
+   <nav>
+       <ul class="main-menu list-unstyled">
+           <li>
+               <a href="/Link1">Link 1 </a>
+           </li>
+
+           <li class="item-with-sub-menu">
+             <a href="/Link2">Link 2 </a>
+             <ul class="sub-menu list-unstyled">
+               <li>
+                <a href="/Link2/DD_Link">DD_Link_1</a>
+               </li> 
+               <li>
+                <a href="/Link2/DD_Link">DD_Link_2</a>
+               </li> 
+               <li>
+                <a href="/Link2/DD_Link">DD_Link_3</a>
+               </li> 
+            </ul>
+           </li>
+
+           <li class="item-with-sub-menu">
+            <a href="/Link3">Link 3 </a>
+            <ul class="sub-menu list-unstyled">
+                <li>
+                 <a href="/Link3/DD_Link">DD_Link_1</a>
+                </li> 
+                <li>
+                 <a href="/Link3/DD_Link">DD_Link_2</a>
+                </li> 
+                <li>
+                 <a href="/Link3/DD_Link">DD_Link_3</a>
+                </li> 
+             </ul>
+           </li>
+
+       </ul>
+
+   </nav>
+ </body>
+</html>
